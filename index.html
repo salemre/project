@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSUF work</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header id="header1">
+      <h1><a href="#" onclick="Show_content()"> CSUF EDEN </a></h1>
+    </header>
+    <div id="myDIV" class="adj" style="display:none">
+		<div class="row">
+			<div class="col">
+				<label class="form-check-label frw">
+				<input type="checkbox" id="spr1" class="form-check-input" value="">Sprinkle 1
+				</label><br><br>
+				
+				<input type="number" id="water1" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time1a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time1b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time1c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			</div>
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr2" class="form-check-input" value="">Sprinkle 2
+				</label><br><br>
+				
+				<input type="number" id="water2" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time2a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time2b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time2c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr3" class="form-check-input" value="">Sprinkle 3
+				</label><br><br>
+				
+				<input type="number" id="water3" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time3a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time3b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time3c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+			<br><br><button type="button" class="btn btn-success" style="margin-left:320px;" onclick=submit()>Submit</button>
+			<button type="button" class="btn btn-primary" onclick=clearData()>Reset</button>
+		<br><br><br>
+		
+		
+		<div id="result" style="margin-left:50px; display:none">
+		<div class ="row">
+			<div class="col">
+				<label class="circle"><p style="margin-top:50px;">Usage power in voltage</p></label>
+			</div>
+			<div class="col">
+			<label class="circle"><p style="margin-top:50px;">Total water used in Liter <br> Soil Moisture</p></label>
+			</div>
+			<div class="col">
+			<label class="circle"><p style="margin-top:50px;">Weather conditions and temperature in F</p></label>
+			</div>
+			
+		</div>
+		<br><button type="button" class="btn btn-success" style="margin-left:350px;" onclick=Show_content()>Done</button>
+		
+		
+		</div>
+		
+		
+		
+	</div>
+    <script src="script.js"></script>
+  </body>
+</html>
