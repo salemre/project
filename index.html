@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>CSUF work</title>
     <link rel="stylesheet" href="styles.css" />
+	<!-- The below code is to add some external libraries
+		first is a javascript library to include jquesry to make javascript easier
+		2nd line is to include css file of bootstrap. It is advanced form of CSS to make the website look good
+		the 3rd line is also a javascript file and is related to bootstrap as well
+	-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -14,6 +19,18 @@
       <h1><a href="#" onclick="Show_content()"> CSUF EDEN </a></h1>
     </header>
     <div id="myDIV" class="adj" style="display:none">
+	<!-- Here i've defined a DIV (division) element of html which divides html page into rows and cols 
+		according to our requirements. 
+		I used a form so that i can clear and submit data in a single click instead of getting or clearing data of each 
+		input or checkbox.
+		I've defined a sequence of 4 rows and each row contains 4 columns, The code is given below.
+		class = row is to define a division in rows
+		class = cols is to divide row into multiple columns
+		These repeats until all 16 sprinkles are added.
+		I also define a class in CSS named divcolor to distinguish between two rows. 1 row appears with white background
+		whereas other row appears with blue background.
+	-->
+		<form id ="myform">
 		<div class="row">
 			<div class="col">
 				<label class="form-check-label frw">
@@ -83,12 +100,347 @@
 			
 			</div>
 			
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr4" class="form-check-input" value="">Sprinkle 4
+				</label><br><br>
+				
+				<input type="number" id="water4" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time4a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time4b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time4c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			
 		</div>
+		<br>
+		<div class="row divcolor">
+		
+			<div class="col">
+			<br>
+				<label class="form-check-label frw">
+				<input type="checkbox" id="spr5" class="form-check-input" value="">Sprinkle 5
+				</label><br><br>
+				
+				<input type="number" id="water5" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time5a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time5b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time5c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr6" class="form-check-input" value="">Sprinkle 6
+				</label><br><br>
+				
+				<input type="number" id="water6" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time6a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time6b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time6c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr7" class="form-check-input" value="">Sprinkle 7
+				</label><br><br>
+				
+				<input type="number" id="water7" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time7a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time7b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time7c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr8" class="form-check-input" value="">Sprinkle 8
+				</label><br><br>
+				
+				<input type="number" id="water8" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time8a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time8b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time8c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			
+		</div>
+		
+		<br>
+			
+		
+		
+		<div class="row">
+			<div class="col">
+				<label class="form-check-label frw">
+				<input type="checkbox" id="spr9" class="form-check-input" value="">Sprinkle 9
+				</label><br><br>
+				
+				<input type="number" id="water9" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time9a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time9b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time9c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			</div>
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr10" class="form-check-input" value="">Sprinkle 10
+				</label><br><br>
+				
+				<input type="number" id="water10" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time10a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time10b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time10c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr11" class="form-check-input" value="">Sprinkle 11
+				</label><br><br>
+				
+				<input type="number" id="water11" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time11a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time11b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time11c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="col">
+			
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr12" class="form-check-input" value="">Sprinkle 12
+				</label><br><br>
+				
+				<input type="number" id="water12" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time12a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time12b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time12c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			
+			</div>
+			
+			
+		</div>	
+		
+		
+				<br>
+		
+		
+		<div class="row divcolor">
+		
+			<div class="col">
+			<br>
+				<label class="form-check-label frw">
+				<input type="checkbox" id="spr13" class="form-check-input" value="">Sprinkle 13
+				</label><br><br>
+				
+				<input type="number" id="water13" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time13a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time13b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time13c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr14" class="form-check-input" value="">Sprinkle 14
+				</label><br><br>
+				
+				<input type="number" id="water14" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time14a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time14b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time14c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr15" class="form-check-input" value="">Sprinkle 15
+				</label><br><br>
+				
+				<input type="number" id="water15" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time15a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time15b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time15c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			<div class="col">
+			<br>
+			<label class="form-check-label frw">
+				<input type="checkbox" id="spr16" class="form-check-input" value="">Sprinkle 16
+				</label><br><br>
+				
+				<input type="number" id="water16" class="form-control" value="" placeholder="Enter water amount in Liters"/><br>
+				<label class="form-check-label"> Enter watering time </label>
+				<div class="row">
+						
+						<div class="col">
+						<input type="number"  id="time16a" class="form-control" value="" placeholder="HH"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time16b" class="form-control" value="" placeholder="MM"/>
+						</div>
+						<div class="col">
+						<input type="number"  id="time16c" class="form-control" value="" placeholder="SS"/>
+						</div>
+				
+				</div>
+			<br>
+			</div>
+			
+			
+		</div>
+		</form>
+		
+			<!-- here two buttons are defined named submit which call a function submit() defined in javascript file
+			and a button reset which calls a function clearData() to clear all the input fields.
+	-->
 			<br><br><button type="button" class="btn btn-success" style="margin-left:320px;" onclick=submit()>Submit</button>
 			<button type="button" class="btn btn-primary" onclick=clearData()>Reset</button>
 		<br><br><br>
 		
-		
+		<!-- The code below is to show data in circular tags which appears after clicking on submit button.
+		one of these circles at the moment shows real time weather report which we got from a function defined in javascript file
+	-->
 		<div id="result" style="margin-left:50px; display:none">
 		<div class ="row">
 			<div class="col">
@@ -98,14 +450,20 @@
 			<label class="circle"><p style="margin-top:50px;">Total water used in Liter <br> Soil Moisture</p></label>
 			</div>
 			<div class="col">
-			<label class="circle"><p style="margin-top:50px;">Weather conditions and temperature in F</p></label>
+			<label class="circle"><p style="margin-top:50px;" id="temp">Weather conditions and temperature in F</p></label>
 			</div>
 			
 		</div>
-		<br><button type="button" class="btn btn-success" style="margin-left:350px;" onclick=Show_content()>Done</button>
 		
+		<!-- The below code is to make sure that everything is done and we want to return to main home page. By clicking
+		it display the original home page.
+	-->
+		
+		<br><button type="button" class="btn btn-success" style="margin-left:350px;" onclick=Show_content()>Done</button>
+		<br>
 		
 		</div>
+		<br>
 		
 		
 		

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-
+/* following is the css defined for each tag i.e. body and header */
 *,
 *::before,
 *::after {
@@ -17,10 +17,7 @@ body {
   
 }
 
-img {
-  width: 100%;
-  display: block;
-}
+
 
 /* HEADER SECTION */
 header {
@@ -57,11 +54,11 @@ body {
   background-attachment: fixed;
   color: #e17000;
 }
-
+/* from here onward some classes are defined to make data look according to requirements*/
 .adj {
-	margin-right: 300px;
-	margin-left: 300px;
-	margin-top: 150px;
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-top: 50px;
 	
 }
 .frw {
@@ -82,6 +79,8 @@ body {
 	background-color: #00376b;
 	color: #fff;
 }
+
+/* below class is used to define circles to show data after submit button is clicked like weather data */
 .circle {
   width: 200px;
   height: 200px;
@@ -98,4 +97,9 @@ body {
 button {
 	
 	width:150px;
+}
+
+.divcolor {
+	background-color: #ADD8E6;
+	
 }
